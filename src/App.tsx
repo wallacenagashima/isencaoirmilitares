@@ -93,25 +93,20 @@ function App() {
             </div>
             
             <div className="bg-gradient-to-br from-slate-50 to-green-50 p-8 rounded-2xl shadow-2xl border-2 border-green-200">
-              <iframe 
-                data-tally-src="https://tally.so/embed/n0BroA?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
-                loading="lazy" 
-                width="100%" 
-                height="250" 
-                frameBorder="0" 
-                marginHeight="0" 
-                marginWidth="0" 
-                title="Formulário de Direito Militar"
-                className="rounded-lg"
-              ></iframe>
-              <script dangerouslySetInnerHTML={{
-                __html: `
-                  var d=document,s=d.createElement("script");
-                  s.src="https://tally.so/widgets/embed.js";
-                  s.onload=function(){Tally.loadEmbeds()};
-                  d.body.appendChild(s);
-                `
-              }}></script>
+              <div className="relative">
+                <iframe 
+                  src="https://tally.so/embed/n0BroA?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
+                  loading="lazy" 
+                  width="100%" 
+                  height="500" 
+                  frameBorder="0" 
+                  marginHeight="0" 
+                  marginWidth="0" 
+                  title="Formulário de Direito Militar"
+                  className="rounded-lg"
+                ></iframe>
+              </div>
+              <script src="https://tally.so/widgets/embed.js" async></script>
               
               <div className="flex items-center justify-center gap-2 mt-4 text-green-700">
                 <Shield size={16} />
