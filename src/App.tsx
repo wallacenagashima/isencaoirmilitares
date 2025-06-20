@@ -54,7 +54,7 @@ function App() {
               </div>
               <div className="flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-2 rounded-full">
                 <CheckCircle className="text-green-400" size={20} />
-                <span>Mais de 3.000 militares atendidos</span>
+                <span>Mais de 853 militares atendidos</span>
               </div>
             </div>
 
@@ -174,14 +174,14 @@ function App() {
             </div>
 
             <div className="mt-12">
-              <div className="bg-gradient-to-r from-slate-800/50 via-slate-900/50 to-green-600/50 rounded-2xl p-8">
+              <div className="bg-white rounded-2xl p-8">
                 <div className="max-w-3xl mx-auto">
                   <div className="text-center mb-8">
-                    <Shield className="inline-block mb-4 text-yellow-400" size={32} />
+                    <Shield className="inline-block mb-4 text-green-700" size={32} />
                     <h3 className="text-3xl font-bold text-slate-900 mb-4">
                       Doenças que entram na lei
                     </h3>
-                    <p className="text-gray-400 text-sm">
+                    <p className="text-gray-600 text-sm">
                       Lista completa das doenças que garantem isenção de IR para militares
                     </p>
                   </div>
@@ -208,14 +208,14 @@ function App() {
                     ].map((disease, index) => (
                       <div
                         key={index}
-                        className="bg-white/10 rounded-lg p-4 hover:bg-white/20 transition-colors duration-200"
+                        className="bg-white/5 rounded-lg p-4 hover:bg-white/10 transition-colors duration-200"
                       >
                         <div className="flex items-center gap-3">
                           <CheckCircle
                             className="text-green-600 flex-shrink-0"
                             size={20}
                           />
-                          <p className="text-gray-300 font-medium">
+                          <p className="text-gray-700 font-medium">
                             {disease}
                           </p>
                         </div>
@@ -246,19 +246,19 @@ function App() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div className="bg-white/20 backdrop-blur-lg p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="text-4xl font-bold text-green-700">R$ 32 mil</div>
-                <div className="text-sm text-gray-300 mt-2">Média por militar</div>
+                <div className="text-sm text-gray-700 mt-2">Média por militar</div>
               </div>
               <div className="bg-white/20 backdrop-blur-lg p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="text-4xl font-bold text-green-700">R$ 128 mil</div>
-                <div className="text-sm text-gray-300 mt-2">Maior restituição</div>
+                <div className="text-sm text-gray-700 mt-2">Maior restituição</div>
               </div>
               <div className="bg-white/20 backdrop-blur-lg p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="text-4xl font-bold text-green-700">853+</div>
-                <div className="text-sm text-gray-300 mt-2">Militares atendidos</div>
+                <div className="text-sm text-gray-700 mt-2">Militares atendidos</div>
               </div>
               <div className="bg-white/20 backdrop-blur-lg p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="text-4xl font-bold text-green-700">95%</div>
-                <div className="text-sm text-gray-300 mt-2">Taxa de sucesso</div>
+                <div className="text-sm text-gray-700 mt-2">Taxa de sucesso</div>
               </div>
             </div>
           </div>
