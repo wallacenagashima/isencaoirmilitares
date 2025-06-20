@@ -307,47 +307,6 @@ function App() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-16 bg-slate-100">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <Star className="text-yellow-500 mx-auto mb-4" size={48} />
-              <h2 className="text-3xl font-bold text-slate-900 mb-4">
-                O que dizem nossos clientes
-              </h2>
-              <p className="text-gray-600 text-lg">
-                Depoimentos reais de militares que recuperaram seus direitos
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-white p-6 rounded-xl shadow-lg">
-                <div className="flex items-center gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="text-yellow-500 fill-current" size={16} />
-                  ))}
-                </div>
-                <p className="text-gray-700 mb-4 italic">
-                  "Parei de pagar o IR em 3 meses e recuperei mais de R$ 35 mil com ajuda da equipe jurídica. Profissionais sérios e comprometidos com o resultado"
-                </p>
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold">CS</span>
-                  </div>
-                  <div>
-                    <p className="font-semibold text-slate-900">Cel. C. S.</p>
-                    <p className="text-sm text-gray-600">Exército Brasileiro - São Paulo/SP</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-lg">
                 <div className="flex items-center gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="text-yellow-500 fill-current" size={16} />
@@ -392,41 +351,42 @@ function App() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-gradient-to-br from-blue-600 via-blue-700 to-green-700 text-white">
+      <section className="py-16 bg-green-700">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              Não perca tempo.
-              <span className="block text-yellow-400 mt-2">
-                Descubra agora se você tem direito à restituição!
-              </span>
-            </h2>
-            
-            <p className="text-xl mb-8 text-blue-100">
-              Cada dia que passa é dinheiro que você pode estar perdendo. 
-              Nossa análise é gratuita e sem compromisso.
-            </p>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-8">
+              <div className="flex items-center justify-center gap-2 mb-4">
+                <Clock className="text-white" size={32} />
+                <h2 className="text-3xl font-bold text-white">
+                  Não perca tempo
+                </h2>
+              </div>
+              <p className="text-white text-lg mb-8">
+                A Lei 7.713/88 é uma oportunidade única de recuperar impostos pagos indevidamente. Não espere mais para descobrir se você tem direito!
+              </p>
 
-            <div className="bg-red-600 text-white px-6 py-4 rounded-lg inline-block mb-8 animate-pulse">
-              <div className="flex items-center gap-2">
-                <Clock size={24} />
-                <span className="font-bold text-lg">ÚLTIMOS DIAS para requerer restituição de 2019!</span>
+              <div className="bg-white p-6 rounded-xl shadow-lg">
+                <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold text-slate-900 mb-2">
+                      Quer saber se tem direito?
+                    </h3>
+                    <p className="text-slate-900">
+                      Faça o teste gratuito agora e descubra se você pode recuperar até R$ 100 mil em impostos pagos indevidamente.
+                    </p>
+                  </div>
+                  <div className="flex-1">
+                    <a
+                      href="#formulario"
+                      className="w-full bg-yellow-400 hover:bg-yellow-500 text-slate-900 px-6 py-3 rounded-lg font-bold text-lg transition-all duration-300 flex items-center justify-center gap-2 shadow-xl"
+                    >
+                      Fazer Teste Gratuito
+                      <ArrowRight size={20} />
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-
-            <div className="flex justify-center">
-              <a
-                href="#formulario"
-                className="bg-yellow-400 hover:bg-yellow-500 text-slate-900 px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 hover:scale-105 flex items-center gap-2 shadow-xl"
-              >
-                Verificar Meu Direito Agora
-                <ArrowRight size={20} />
-              </a>
-            </div>
-
-            <p className="text-sm text-blue-200 mt-6">
-              ✅ Análise gratuita • ✅ Sem compromisso • ✅ Atendimento especializado
-            </p>
           </div>
         </div>
       </section>
