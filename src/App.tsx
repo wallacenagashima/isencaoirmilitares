@@ -21,7 +21,8 @@ function App() {
       </header>
 
       {/* Hero Section with Background Image */}
-      <section className="relative min-h-screen bg-cover bg-center bg-no-repeat text-white py-20 overflow-hidden flex items-center" style={{backgroundImage: 'url(/public/camouflage-soldier-eyes.jpg)'}}>
+      <section className="relative min-h-screen bg-cover bg-center bg-no-repeat text-white py-20 overflow-hidden flex items-center">
+        <img src="/camouflage-soldier-eyes.jpg" alt="" className="absolute inset-0 object-cover w-full h-full" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
